@@ -4,19 +4,23 @@
   overflow: hidden;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
   width: 100%;
   display: flex;
 }
 
 .contain1 {
-  background: linear-gradient(to right, #00e676, #b9f6ca);
+  background: #edf2f8;
   width: 61%;
   height: 100vh;
 }
 
 .contain2 {
-  background: linear-gradient(to left, #ff6f00, #ffa726);
+  background: #6168ed;
   width: 39%;
   height: 100vh;
 }
@@ -24,21 +28,22 @@
 /* container 3 css design */
 .contain3 {
   background: #edf2f8;
-  height: 83%;
-  width: 80%;
+  height: 90%;
+  width: 95%;
   z-index: 1;
   position: absolute;
-  top: 49%;
-  left: 53%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   border-top-left-radius: 20px !important;
   border-bottom-left-radius: 20px !important;
   border-top-right-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
-  /* border-radius: 2%; */
-  transform: translate(-50%, -50%);
+
   /* grid for container */
   display: grid;
-  grid-template-columns: 70px 430px 1fr;
+  grid-template-columns: 60px 430px 1fr;
   grid-template-rows: 1fr 60px;
   grid-template-areas:
     "sidenav main1 main2"
@@ -46,7 +51,7 @@
 }
 
 .sidenav {
-  background: #fb8c00;
+  background: #3b40e4;
   grid-area: sidenav;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -174,13 +179,13 @@ ul li:hover .fab {
 .main1 {
   background: white;
   grid-area: main1;
-  padding: 0 20px;
+  padding: 0 10px 0 30px;
 }
 
 .main-container {
   margin: 0 auto;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 7px;
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -205,6 +210,7 @@ ul li:hover .fab {
   margin-bottom: 10px;
 }
 .travelling h2 {
+  font-family: "Courgette", cursive;
   font-size: 18px;
   margin-bottom: 5px;
 }
@@ -212,7 +218,7 @@ ul li:hover .fab {
 .date-in {
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  width: 100%;
   font-size: 13px;
 }
 
@@ -224,17 +230,17 @@ ul li:hover .fab {
 .date-print {
   margin-right: 10px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 20%;
 }
 
 .trans-med {
   display: flex;
   justify-content: space-between;
-  padding-right: 5px;
-  padding-left: 5px;
-  padding-bottom: 5px;
-  margin-top: 10px;
+  /* padding-right: 5px;
+  padding-left: 5px; */
+  padding-bottom: 2px;
+  margin-top: 8px;
 }
 
 .las {
@@ -245,7 +251,7 @@ ul li:hover .fab {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffa726;
+  color: #5d84fb;
 }
 /* ------------------------------------------ */
 /* ------------------------------------------ */
@@ -255,7 +261,7 @@ ul li:hover .fab {
 
 .day h3 {
   margin-bottom: 10px;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .day-symbol {
@@ -273,12 +279,12 @@ ul li:hover .fab {
 
 .day-col1 h2 {
   margin-bottom: 5px;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .aero-logo {
   margin-bottom: 9px;
-  color: #ffb300;
+  color: #5d84fb;
 }
 
 .aero-logo .fa {
@@ -300,7 +306,7 @@ ul li:hover .fab {
 }
 
 .day-n {
-  background: #ff9800;
+  background: #edf2f8;
   height: 50px;
   margin-right: 9px;
   margin-left: 8px;
@@ -316,7 +322,7 @@ ul li:hover .fab {
 .day-am {
   grid-area: day-am;
   font-size: 12px;
-  padding-left: 30px;
+  padding-left: 20px;
   padding-top: 5px;
   display: flex;
   flex-direction: column;
@@ -346,13 +352,13 @@ ul li:hover .fab {
 
 .fontUn .fas {
   font-size: 8px;
-  color: wheat;
+  color: #5d84fb;
 }
 
 .day-pm {
   grid-area: day-pm;
   font-size: 12px;
-  padding-right: 30px;
+  padding-right: 20px;
   padding-top: 5px;
   display: flex;
   flex-direction: column;
@@ -397,7 +403,7 @@ ul li:hover .fab {
 
 .t-logo {
   margin-bottom: 9px;
-  color: #ffb300;
+  color: #5d84fb;
 }
 
 .t-logo .fa {
@@ -434,7 +440,7 @@ ul li:hover .fab {
 }
 
 .nextWords {
-  background: #f68b2a;
+  background: #f5f8fd;
   padding-left: 10px;
   font-size: 10px;
   padding-top: 7px;
@@ -447,12 +453,13 @@ ul li:hover .fab {
 }
 
 .emptyDiv h3 {
-  font-size: 9px;
-  margin-bottom: 20px;
+  font-size: 12px;
+  margin-bottom: 50px;
 }
 
 #eff {
-  color: #fb8c00;
+  font-family: "Courgette", cursive;
+  font-size: 15px;
 }
 
 /* ------------------------------------------ */
@@ -493,16 +500,16 @@ ul li:hover .fab {
 }
 
 .less {
-  color: white;
-  background: #1de9b6;
-  font-size: 9px;
+  color: #5d84fb;
+  background: #f5f8fd;
+  font-size: 10px;
   padding: 5px 11px;
 }
 
 .pics-grid {
   grid-area: pics-grid;
   display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
+  grid-template-columns: 1.1fr 0.7fr;
   grid-column-gap: 10px;
   grid-template-areas: "pic1 pic-house";
 }
@@ -572,6 +579,10 @@ input.star-1:checked ~ label.star:before {
   color: #f62;
 }
 
+.star-n {
+  font-size: 14px;
+}
+
 /*---------------------- 2nd row of container 3 -------------------------- */
 .main-div1 {
   width: 88%;
@@ -603,7 +614,8 @@ input.star-1:checked ~ label.star:before {
 
 .describe-words h3 {
   margin-bottom: 8px;
-  font-size: 15px;
+  font-size: 16px;
+  font-family: "Courgette", cursive;
 }
 
 .btnLu {
@@ -621,12 +633,14 @@ input.star-1:checked ~ label.star:before {
 }
 
 .btn-N:hover {
-  background: #fb8c00;
+  background: white;
+  color: #00e676;
+  border: 1px solid #00e676;
 }
 
 .des-p {
   text-align: justify;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 /*  */
@@ -676,17 +690,17 @@ input.star-1:checked ~ label.star:before {
   width: 100%;
   margin-top: 10px;
   padding: 6px 5px;
-  background: #fb8c00;
+  background: #edf2f8;
   border-radius: 7px;
-  color: white;
+  color: #6168ed;
   outline: none;
   border: none;
 }
 
 .btn-host:hover {
-  border: 1px solid #fb8c00;
+  border: 1px solid #6168ed;
   background: white;
-  color: #fb8c00;
+  color: #6168ed;
 }
 
 /*----------- home automation --------------*/
@@ -733,15 +747,15 @@ input.star-1:checked ~ label.star:before {
 
 .cancel {
   padding: 10px 15px;
+  border: 1px solid #6168ed;
   background: white;
-  color: #01d451;
-  border: 1px solid #01d451;
+  color: #6168ed;
   outline: none;
 }
 
 .cancel:hover {
-  color: #fb8c00;
-  border: 1px solid #fb8c00;
+  background: #6168ed;
+  color: white;
 }
 
 .proceed {
@@ -759,10 +773,10 @@ input.star-1:checked ~ label.star:before {
 }
 
 .container4 {
-  height: 80px;
+  height: 90px;
   width: 400px;
   position: absolute;
-  left: 60%;
+  left: 56%;
   top: 64%;
   transform: translate(-80%, 50%);
   display: flex;
@@ -775,14 +789,14 @@ input.star-1:checked ~ label.star:before {
 .agofure {
   width: 50%;
   height: 100%;
-  background: url(./img/ag.jpg);
+  background: url(./img/gig2.jpg);
   background-position: center;
   background-size: cover;
 }
 .gig {
   width: 50%;
   height: 100%;
-  background: url(./img/gig.jpg);
+  background: url(./img/e5.jpg);
   background-position: center;
   background-size: cover;
 }
