@@ -776,9 +776,9 @@ input.star-1:checked ~ label.star:before {
   height: 90px;
   width: 400px;
   position: absolute;
-  left: 56%;
+  left: 57%;
   top: 64%;
-  transform: translate(-80%, 50%);
+  transform: translate(-81%, 50%);
   display: flex;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
