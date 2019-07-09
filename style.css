@@ -29,7 +29,7 @@ body {
 .contain3 {
   background: #edf2f8;
   height: 90%;
-  width: 95%;
+  width: 80%;
   z-index: 1;
   position: absolute;
   top: 50%;
@@ -43,7 +43,7 @@ body {
 
   /* grid for container */
   display: grid;
-  grid-template-columns: 60px 430px 1fr;
+  grid-template-columns: 50px 410px 1fr;
   grid-template-rows: 1fr 60px;
   grid-template-areas:
     "sidenav main1 main2"
@@ -53,33 +53,41 @@ body {
 .sidenav {
   background: #3b40e4;
   grid-area: sidenav;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.1fr 0.9fr;
+  grid-row-gap: 8px;
+  grid-template-areas:
+    "side1"
+    "side2";
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  display: flex;
-  flex-direction: column;
 }
 
 .side1 {
-  height: 90%;
+  grid-area: side1;
+  color: white;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 1.5fr;
-  grid-row-gap: 8px;
+  grid-template-rows: 65px 65px 65px 65px;
+  grid-row-gap: 22px;
   grid-template-areas:
     "sidea"
-    "sideb";
+    "sideb"
+    "sidec"
+    "sided";
 }
 
 .sidea {
   grid-area: sidea;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  justify-content: space-around;
 }
 
 .sidePic {
+  margin-top: 7px;
   height: 25px;
   width: 25px;
   background: url(./img/mkn3.jpg);
@@ -88,21 +96,73 @@ body {
   border-radius: 50%;
 }
 
-.sidea .fas {
+.sideb {
+  grid-area: sideb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sidec {
+  grid-area: sidec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sided {
+  grid-area: sided;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.side2 {
+  grid-area: side2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* .sidea {
+  grid-area: sidea;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+} */
+
+/* .sidePic {
+  height: 25px;
+  width: 25px;
+  background: url(./img/mkn3.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+} */
+
+/* .sidea .fas {
   font-size: 13px;
   color: white;
 }
 
 .sideb {
   grid-area: sideb;
-}
+} */
 
-ul {
+/* ul {
   height: 80%;
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
-  align-items: center;
+/* align-items: center;
 }
 
 ul li a .fab {
@@ -117,61 +177,17 @@ ul li {
   margin: 10px 0;
   padding: 20px;
   cursor: pointer;
-}
+} */
 
-ul li a {
-  /* margin: 20px 20px; */
+/* ul li a {
+  
   background: #fff;
   display: block;
   width: 20px;
   height: 20px;
   text-align: center;
   position: relative;
-  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
-  transition: 0.5s;
-  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
-}
-
-ul li a:hover {
-  transform: perspective(1000px) rotate(-30deg) skew(25deg)
-    translate(10px, -10px);
-  box-shadow: -50px 50px 10px rgba(0, 0, 0, 0.5);
-  background: orange;
-}
-
-.face:hover {
-  background: #3b5999;
-  color: white;
-}
-
-.twitter:hover {
-  background: #55acee;
-}
-
-.insta:hover {
-  background: #e4405f;
-}
-
-.google:hover {
-  background: #dd4b39;
-}
-
-.linke:hover {
-  background: #0077b5;
-}
-
-ul li:hover .fab {
-  color: white;
-}
-
-.side2 {
-  height: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  margin-bottom: 10px;
-}
+} */
 
 /* ---------------------------  ====  ----- */
 /* ---------------------------  ====  ----- */
@@ -210,7 +226,6 @@ ul li:hover .fab {
   margin-bottom: 10px;
 }
 .travelling h2 {
-  font-family: "Courgette", cursive;
   font-size: 18px;
   margin-bottom: 5px;
 }
@@ -358,7 +373,7 @@ ul li:hover .fab {
 .day-pm {
   grid-area: day-pm;
   font-size: 12px;
-  padding-right: 20px;
+  padding-right: 15px;
   padding-top: 5px;
   display: flex;
   flex-direction: column;
@@ -459,7 +474,7 @@ ul li:hover .fab {
 
 #eff {
   font-family: "Courgette", cursive;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 /* ------------------------------------------ */
@@ -615,7 +630,6 @@ input.star-1:checked ~ label.star:before {
 .describe-words h3 {
   margin-bottom: 8px;
   font-size: 16px;
-  font-family: "Courgette", cursive;
 }
 
 .btnLu {
@@ -774,11 +788,11 @@ input.star-1:checked ~ label.star:before {
 
 .container4 {
   height: 90px;
-  width: 400px;
+  width: 350px;
   position: absolute;
-  left: 57%;
+  left: 59%;
   top: 64%;
-  transform: translate(-81%, 50%);
+  transform: translate(-80%, 50%);
   display: flex;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
