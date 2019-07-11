@@ -155,7 +155,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 110px 125px 95px 90px;
+  grid-template-rows: 103px 117px 80px 110px;
   grid-row-gap: 8px;
   grid-template-areas:
     "travel"
@@ -755,11 +755,11 @@ button {
 .container4 {
   background: linear-gradient(to left, #4149e3, #676ced);
   height: 80px;
-  width: 560px;
+  width: 550px;
   position: absolute;
-  left: 50%;
+  left: 55%;
   top: 66%;
-  transform: translate(-85%, 48%);
+  transform: translate(-87%, 48%);
   display: flex;
   justify-content: space-evenly;
   box-shadow: 0 10px 10px #d5d7f8;
@@ -833,7 +833,7 @@ button {
 }
 
 .midLine {
-  margin-top: 17px;
+  margin-top: 21px;
   padding-right: 10px;
   border-left: 1px dashed white;
   height: 35px;
@@ -847,9 +847,9 @@ button {
   width: 12px;
   height: 12px;
   background: white;
-  top: 72%;
-  left: 40%;
-  transform: translate(-40%, -29%);
+  top: 73%;
+  left: 43%;
+  transform: translate(-40%, -49%);
   border-radius: 50%;
   z-index: 1;
 }
@@ -861,9 +861,9 @@ button {
   width: 12px;
   height: 12px;
   background: #d5d7f8;
-  top: 85%;
-  left: 40%;
-  transform: translate(-40%, -5%);
+  top: 87%;
+  left: 43%;
+  transform: translate(-40%, -25%);
   border-radius: 50%;
   z-index: 1;
   outline: none;
